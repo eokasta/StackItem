@@ -1,0 +1,15 @@
+name: ${artifactId}
+version: ${version}
+description: ${description}
+author: ${author}
+website: ${url}
+
+main: ${mainClass}
+
+commands:
+  stackitem:
+    aliases:
+      - stackitems
+      - sitems
+      - si
+    description: General command

@@ -1,0 +1,7 @@
+not-stackables:
+  - 'STONE:2'
+stack-limit: 45
+radius-to-stack: 10
+name:
+  show: true
+  format: "&ax{quantity} - {name}"
