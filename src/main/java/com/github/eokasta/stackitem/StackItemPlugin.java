@@ -20,9 +20,4 @@ public class StackItemPlugin extends JavaPlugin {
         new StackItemCommand(this);
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
 }

@@ -38,7 +38,11 @@ public class Settings {
 
         final Replacer replacer = new Replacer();
         replacer.add("{quantity}", item.getItemStack().getAmount());
-        replacer.add("{name}", MaterialName.valueOf(item).getName());
+        replacer.add("{name}",
+                item.getItemStack().getItemMeta().hasDisplayName()
+                        ? item.getItemStack().getItemMeta().getDisplayName()
+                        : MaterialName.valueOf(item).getName()
+        );
 
         return ChatColor.translateAlternateColorCodes(
                 '&',
